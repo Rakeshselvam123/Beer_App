@@ -1,0 +1,769 @@
+import 'package:flare_flutter/flare_actor.dart';
+import 'dart:ui';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+void main() {
+  runApp(MaterialApp(
+    home: FirstScreen(),
+    debugShowCheckedModeBanner: false,
+    initialRoute: '/',
+    routes: {
+
+      '/': (context) => FirstScreen(),
+
+      '/second': (context) => SecondScreen(),
+      '/third': (context) => Thirdpage(),
+    },
+  ));
+}
+
+class FirstScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+new Stack(
+children: <Widget>[
+new Center(
+child: new ClipRect(
+child: new BackdropFilter(
+filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+child: new Container(
+width: 390.0,
+height: 575.0,
+decoration: new BoxDecoration(
+borderRadius: new BorderRadius.circular(40.0),
+color: Color.fromARGB(255, 204, 204, 204).withOpacity(0.8)
+),
+child: ListView(
+children: <Widget>[
+Row(
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+children: <Widget>[
+Container(
+child: Container(
+child: Stack(
+children: <Widget>[
+Container(
+child: Column(
+children: <Widget>[
+Container(
+child: Align(
+alignment: Alignment(1.0,0.0),
+child: SizedBox(
+child:Container(
+child: Center(
+child: Text('ITEM ___________\n\n AMOUNT ________ \n\n RATINGS ____________'),
+),
+margin: EdgeInsets.only(top:8,right: 10),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0),
+color: Colors.white70,
+),
+),
+height: 158,
+width: 185,
+),
+)
+),
+Expanded(
+child: Align(
+alignment: Alignment(-0.65, 1),
+child:RaisedButton( child: Text('BUY'),
+shape: new RoundedRectangleBorder(
+borderRadius:
+new BorderRadius.circular(15.0),
+side: BorderSide(color: Colors.black)),
+onPressed: () {
+Navigator.push(
+context,
+MaterialPageRoute(builder: (context) => SecondScreen()),
+);
+} ),
+),
+),],
+),
+),
+Positioned(
+left:15,
+top: 8,
+child:
+Container(
+height: 140,
+width: 160,
+padding: EdgeInsets.only(top: 10,left: 3,bottom: 3,right: 3),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0)
+),
+child: Container(
+decoration: new BoxDecoration(
+image: DecorationImage(
+image: AssetImage('assests/images/cart.png'),
+fit: BoxFit.fill,
+),
+borderRadius: BorderRadius.circular(20.0),
+border: Border.all(color: Colors.black,
+width: 4
+),
+color: Colors.grey,
+),
+),
+)
+),
+],
+),
+margin: EdgeInsets.only(left: 12, right: 12, top: 12),
+height: 200,
+width: 365,
+decoration: new BoxDecoration(
+color: Color.fromARGB(255, 38, 38, 38),
+borderRadius: new BorderRadius.circular(30.0)
+) ,
+alignment: Alignment.topCenter,
+)
+),],
+),
+
+Row(
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+children: <Widget>[
+Container(
+child: Container(
+child: Stack(
+children: <Widget>[
+Container(
+child: Column(
+children: <Widget>[
+Container(
+child: Align(
+alignment: Alignment(1.0,0.0),
+child: SizedBox(
+child:Container(
+child: Center(
+child: Text('ITEM ___________\n\n AMOUNT ________ \n\n RATINGS ____________'),
+),
+margin: EdgeInsets.only(top:8,right: 10),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0),
+color: Colors.white70,
+),
+),
+height: 158,
+width: 185,
+),
+)
+),
+Expanded(
+child: Align(
+alignment: Alignment(-0.65, 1),
+child:RaisedButton( child: Text('BUY'),
+shape: new RoundedRectangleBorder(
+borderRadius:
+new BorderRadius.circular(15.0),
+side: BorderSide(color: Colors.black)),
+onPressed: () {
+Navigator.push(
+context,
+MaterialPageRoute(builder: (context) => SecondScreen()),
+);
+} ),
+),
+),],
+),
+),
+Positioned(
+left:15,
+top: 8,
+child:
+Container(
+height: 140,
+width: 160,
+padding: EdgeInsets.only(top: 10,left: 3,bottom: 3,right: 3),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0)
+),
+child: Container(
+decoration: new BoxDecoration(
+image: DecorationImage(
+image: AssetImage('assests/images/cart.png'),
+fit: BoxFit.fill,
+),
+borderRadius: BorderRadius.circular(20.0),
+border: Border.all(color: Colors.black,
+width: 4
+),
+color: Colors.grey,
+),
+),
+)
+),
+],
+),
+margin: EdgeInsets.only(left: 12, right: 12, top: 12),
+height: 200,
+width: 365,
+decoration: new BoxDecoration(
+color: Color.fromARGB(255, 38, 38, 38),
+borderRadius: new BorderRadius.circular(30.0)
+) ,
+alignment: Alignment.topCenter,
+)
+),],
+),
+
+Row(
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+children: <Widget>[
+Container(
+child: Container(
+child: Stack(
+children: <Widget>[
+Container(
+child: Column(
+children: <Widget>[
+Container(
+child: Align(
+alignment: Alignment(1.0,0.0),
+child: SizedBox(
+child:Container(
+child: Center(
+child: Text('ITEM ___________\n\n AMOUNT ________ \n\n RATINGS ____________'),
+),
+margin: EdgeInsets.only(top:8,right: 10),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0),
+color: Colors.white70,
+),
+),
+height: 158,
+width: 185,
+),
+)
+),
+Expanded(
+child: Align(
+alignment: Alignment(-0.65, 1),
+child:RaisedButton( child: Text('BUY'),
+shape: new RoundedRectangleBorder(
+borderRadius:
+new BorderRadius.circular(15.0),
+side: BorderSide(color: Colors.black)),
+onPressed: () {
+Navigator.push(
+context,
+MaterialPageRoute(builder: (context) => SecondScreen()),
+);
+} ),
+),
+),],
+),
+),
+Positioned(
+left:15,
+top: 8,
+child:
+Container(
+height: 140,
+width: 160,
+padding: EdgeInsets.only(top: 10,left: 3,bottom: 3,right: 3),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0)
+),
+child: Container(
+decoration: new BoxDecoration(
+image: DecorationImage(
+image: AssetImage('assests/images/cart.png'),
+fit: BoxFit.fill,
+),
+borderRadius: BorderRadius.circular(20.0),
+border: Border.all(color: Colors.black,
+width: 4
+),
+color: Colors.grey,
+),
+),
+)
+),
+],
+),
+margin: EdgeInsets.only(left: 12, right: 12, top: 12),
+height: 200,
+width: 365,
+decoration: new BoxDecoration(
+color: Color.fromARGB(255, 38, 38, 38),
+borderRadius: new BorderRadius.circular(30.0)
+) ,
+alignment: Alignment.topCenter,
+)
+),],
+),
+
+Row(
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+children: <Widget>[
+Container(
+child: Container(
+child: Stack(
+children: <Widget>[
+Container(
+child: Column(
+children: <Widget>[
+Container(
+child: Align(
+alignment: Alignment(1.0,0.0),
+child: SizedBox(
+child:Container(
+child: Center(
+child: Text('ITEM ___________\n\n AMOUNT ________ \n\n RATINGS ____________'),
+),
+margin: EdgeInsets.only(top:8,right: 10),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0),
+color: Colors.white70,
+),
+),
+height: 158,
+width: 185,
+),
+)
+),
+Expanded(
+child: Align(
+alignment: Alignment(-0.65, 1),
+child:RaisedButton( child: Text('BUY'),
+shape: new RoundedRectangleBorder(
+borderRadius:
+new BorderRadius.circular(15.0),
+side: BorderSide(color: Colors.black)),
+onPressed: () {
+Navigator.push(
+context,
+MaterialPageRoute(builder: (context) => SecondScreen()),
+);
+} ),
+),
+),],
+),
+),
+Positioned(
+left:15,
+top: 8,
+child:
+Container(
+height: 140,
+width: 160,
+padding: EdgeInsets.only(top: 10,left: 3,bottom: 3,right: 3),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0)
+),
+child: Container(
+decoration: new BoxDecoration(
+image: DecorationImage(
+image: AssetImage('assests/images/cart.png'),
+fit: BoxFit.fill,
+),
+borderRadius: BorderRadius.circular(20.0),
+border: Border.all(color: Colors.black,
+width: 4
+),
+color: Colors.grey,
+),
+),
+)
+),
+],
+),
+margin: EdgeInsets.only(left: 12, right: 12, top: 12),
+height: 200,
+width: 365,
+decoration: new BoxDecoration(
+color: Color.fromARGB(255, 38, 38, 38),
+borderRadius: new BorderRadius.circular(30.0)
+) ,
+alignment: Alignment.topCenter,
+)
+),],
+),
+
+Row(
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+children: <Widget>[
+Container(
+child: Container(
+child: Stack(
+children: <Widget>[
+Container(
+child: Column(
+children: <Widget>[
+Container(
+child: Align(
+alignment: Alignment(1.0,0.0),
+child: SizedBox(
+child:Container(
+child: Center(
+child: Text('ITEM ___________\n\n AMOUNT ________ \n\n RATINGS ____________'),
+),
+margin: EdgeInsets.only(top:8,right: 10),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0),
+color: Colors.white70,
+),
+),
+height: 158,
+width: 185,
+),
+)
+),
+Expanded(
+child: Align(
+alignment: Alignment(-0.65, 1),
+child:RaisedButton( child: Text('BUY'),
+shape: new RoundedRectangleBorder(
+borderRadius:
+new BorderRadius.circular(15.0),
+side: BorderSide(color: Colors.black)),
+onPressed: () {
+Navigator.push(
+context,
+MaterialPageRoute(builder: (context) => SecondScreen()),
+);
+} ),
+),
+),],
+),
+),
+Positioned(
+left:15,
+top: 8,
+child:
+Container(
+height: 140,
+width: 160,
+padding: EdgeInsets.only(top: 10,left: 3,bottom: 3,right: 3),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0)
+),
+child: Container(
+decoration: new BoxDecoration(
+image: DecorationImage(
+image: AssetImage('assests/images/cart.png'),
+fit: BoxFit.fill,
+),
+borderRadius: BorderRadius.circular(20.0),
+border: Border.all(color: Colors.black,
+width: 4
+),
+color: Colors.grey,
+),
+),
+)
+),
+],
+),
+margin: EdgeInsets.only(left: 12, right: 12, top: 12),
+height: 200,
+width: 365,
+decoration: new BoxDecoration(
+color: Color.fromARGB(255, 38, 38, 38),
+borderRadius: new BorderRadius.circular(30.0)
+) ,
+alignment: Alignment.topCenter,
+)
+),],
+),
+
+],
+)
+),
+),
+),
+),
+],
+),
+);
+
+}
+}
+
+class SecondScreen extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+return Scaffold(
+appBar: AppBar(
+title: Text("Second Screen"),
+),
+body: Center(
+child: RaisedButton(
+onPressed: () {
+// Navigate back to the first screen by popping the current route
+// off the stack.
+Navigator.pop(context);
+},
+child: Text('Go back!'),
+),
+),
+);
+}
+}
+
+class Thirdpage extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+return Scaffold(
+appBar: AppBar(
+title: Text("Second Screen"),
+),
+);
+}
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Card(
+child: Container(
+child: Container(
+child: ListView(
+children: <Widget>[
+Container(
+child: Row(
+children: <Widget>[
+Container(
+height: 250,
+width: 400,
+child: SingleChildScrollView(
+scrollDirection: Axis.horizontal,
+child: Row(
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+children: <Widget>[
+Container(
+child: Container(
+margin: EdgeInsets.only(top: 10),
+height: 200,
+width: 200,
+color: Colors.black87,
+)
+,), ],
+),
+),
+alignment: Alignment.topCenter,
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(20.0),
+color: Colors.black45
+),
+)
+],
+),
+)
+],
+),
+),
+height: 550,
+width: 420,
+decoration: BoxDecoration(
+color: Colors.grey,
+borderRadius: BorderRadius.circular(20.0)
+),
+)
+),
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+SizedBox(
+height: 10.0,
+),
+Padding(
+padding: EdgeInsets.only(bottom: 5.0),
+child: Container(
+alignment: Alignment.center,
+decoration: BoxDecoration(
+borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0)),
+color: Color.fromARGB(255, 153, 51, 0)
+),
+height: 30.0,
+child: Center(
+child: Text(
+'Final rate = 240',
+style: TextStyle(
+color: Colors.white,
+fontFamily: 'Montserrat'
+),
+),
+),
+),
+)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Container(
+alignment: Alignment.center,
+decoration: BoxDecoration(
+borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0)),
+color: Color.fromARGB(255, 102, 102, 102)
+),
+height: 50.0,
+child: Center(
+child: Text(
+widget.itemsPrize,
+style: TextStyle(
+color: Colors.black,
+fontFamily: 'Montserrat'
+),
+),
+),
+),
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+ListView(
+children: <Widget>[
+Stack(
+children: <Widget>[
+Container(
+height: MediaQuery
+    .of(context).size.height - 82.0,
+width: MediaQuery
+    .of(context).size.width,
+color: Colors.transparent,
+),
+Positioned(
+top: 75.0,
+child: Container(
+decoration: BoxDecoration(
+borderRadius: BorderRadius.only(
+topLeft: Radius.circular(45.0),
+topRight: Radius.circular(45.0)),
+color: Colors.white
+),
+),
+height: MediaQuery
+    .of(context)
+    .size
+    .height - 100.0,
+width: MediaQuery
+    .of(context)
+    .size
+    .width,
+),
+Positioned(
+top: 30.0,
+left: (MediaQuery
+    .of(context)
+    .size
+    .width / 2) - 100.0,
+child: Hero(
+tag: widget.heroTag,
+child: Container(
+decoration: BoxDecoration(
+image: DecorationImage(
+image: AssetImage(widget.heroTag),
+fit: BoxFit.cover
+),
+),
+height: 200.0,
+width: 200.0,
+),
+),
+),
+Positioned(
+top: 250.0,
+left: 25.0,
+right: 25.0,
+child: Column(
+crossAxisAlignment: CrossAxisAlignment.start,
+children: <Widget>[
+Text(widget.itemsNames,
+style: TextStyle(
+fontSize: 22.0,
+fontFamily: 'Montserrat',
+fontWeight: FontWeight.bold
+)),
+SizedBox(height: 20.0),
+Row(
+mainAxisAlignment: MainAxisAlignment.spaceBetween,
+children: <Widget>[
+Text(widget.itemsPrize,
+style: TextStyle(
+fontFamily: 'Montserrat',
+fontSize: 20.0,
+color: Colors.black
+),),
+
+],), ],),
+),],
+),
+Column(
+children: <Widget>[
+Row(
+mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+children: <Widget>[SizedBox(
+height: 30.0,),
+Container(
+height: 150.0,
+width: 200,
+child:
+ListView(
+scrollDirection: Axis.horizontal,
+children: <Widget>[
+_infoCard('200',),
+SizedBox(width: 10.0),
+SizedBox(
+height: 20.0,
+),
+Padding(
+padding: EdgeInsets.only(bottom: 5.0),
+child: FlatButton(
+child: Container(
+alignment: Alignment.center,
+decoration: BoxDecoration(
+borderRadius: BorderRadius.only(
+topLeft: Radius.circular(10.0)),
+color: Color.fromARGB(255, 102, 102, 102)
+),
+height: 50.0,
+child: Center(
+child: Text(
+widget.itemsPrize,
+style: TextStyle(
+color: Colors.black,
+fontFamily: 'Montserrat'
+),
+),
+),
+),
+onPressed: () {},
+),
+)
+],
+),),
+],)
+],
+),
+],),
+----------------------------------------------------------------------------------------------
+Row(
+mainAxisAlignment: MainAxisAlignment.end,
+children: <Widget>[
+
+Container(
+height: 65.0,
+width: 100.0,
+decoration: BoxDecoration(
+border: Border.all(
+color: Colors.grey,
+style: BorderStyle.solid,
+width: 1.0),
+borderRadius: BorderRadius.circular(20.0)
+),
+child: IconButton(
+icon: Icon(Icons.home,color: Colors.white,),
+)
+),
+
+],),
